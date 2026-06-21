@@ -49,11 +49,10 @@ export default function Signup() {
       errors.push("You must agree to the terms and conditions.");
     }
     if (errors.length > 0) {
-      return { error };
+      return { errors };
     }
     return { errors: null };
   }
-
   const [formDtate, formAction] = useActionState(handleSubmit, {
     errors: null,
   });
