@@ -142,7 +142,7 @@ export default function Signup() {
         </label>
       </div>
       {formDtate.errors && (
-        <ul className="errors">
+        <ul className="error">
           {formDtate.errors.map((error) => (
             <li key={error}>{error}</li>
           ))}
